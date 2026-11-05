@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewVemo | GitHub Pages</title>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 25px 8%;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content {
+            max-width: 650px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #1e293b;
+            color: #38bdf8;
+            padding: 9px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 7vw, 60px);
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.8;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0369a1;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">NewVemo.</div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="tag">GITHUB PAGES PROJECT</div>
+
+            <h1>Welcome to <span>NewVemo</span></h1>
+
+            <p>
+                This is my first GitHub Pages project.
+                A home for experiments, tools, libraries
+                and innovative web solutions.
+            </p>
+
+            <button onclick="showWelcome()">
+                Test SweetAlert2
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="year"></span> NewVemo Technology.
+        All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+        function showWelcome() {
+            Swal.fire({
+                title: "Hello, NewVemo!",
+                text: "Your GitHub Pages website is working!",
+                icon: "success",
+                confirmButtonText: "Awesome!",
+                confirmButtonColor: "#0284c7"
+            });
+        }
+    </script>
+
+</body>
+</html>
