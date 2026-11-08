@@ -1,0 +1,2 @@
+/* Same Supabase project as the ShuleBrain website (anon key is public by design; RLS protects data). */
+window.NV={SUPABASE_URL:"https://rubxxzcrlgemwvqasdzl.supabase.co",SUPABASE_ANON_KEY:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1Ynh4emNybGdlbXd2cWFzZHpsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ4ODk3NjIsImV4cCI6MjEwMDQ2NTc2Mn0.AIExp7yoRnpVwuHl6Xi70wmKZDM960Q17mn9MU6p6M0",SITE:"newvemo"};
